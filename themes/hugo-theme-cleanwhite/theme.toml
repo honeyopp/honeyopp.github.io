@@ -11,8 +11,8 @@ features = ["disqus", "site search", "responsive", "google analytics", "side bar
 min_version = 0.10
 
 [author]
-  name = "Huabing Zhao"
-  homepage = "https://github.com/zhaohuabing"
+  name = "daixianhua"
+  homepage = "https://github.com/honeyopp"
 
 # If porting an existing theme
 [original]
