@@ -57,6 +57,11 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./public
+
   # Deployment job
   deploy:
     environment:
@@ -67,8 +72,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-          #uses: actions/deploy-pages@v2
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./public
-          github_token: ${{ secrets.GITHUB_TOKEN }}  
+        uses: actions/deploy-pages@v2
