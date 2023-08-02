@@ -14,7 +14,7 @@ tags:
     - Microservice
     - Security
 URL: "/2018/05/23/service_2_service_auth/"
-categories: [ Tech ]    
+categories: [ 学习 ]    
 ---
 
 

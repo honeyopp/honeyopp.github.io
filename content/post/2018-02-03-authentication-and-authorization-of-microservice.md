@@ -12,7 +12,7 @@ tags:
     - Microservice
     - Security
 URL: "/2018/05/22/user_authentication_authorization/"
-categories: [ Tech ]
+categories: [ 学习 ]
 ---
 
 ## 前言

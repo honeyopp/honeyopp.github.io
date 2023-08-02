@@ -7,7 +7,7 @@ excerpt: "本任务将演示如何将应用流量逐渐从旧版本的服务迁�
 date:     2017-11-07
 author:     "冷轩"
 image: "/img/istio-traffic-shifting/crossroads.png"
-categories: [ "Tech"]
+categories: [ "学习"]
 tags:
     - Istio
 URL: "/2017/11/07/istio-traffic-shifting/"

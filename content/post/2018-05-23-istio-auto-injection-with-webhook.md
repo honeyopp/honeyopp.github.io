@@ -13,7 +13,7 @@ tags:
     - Kubernetes
     - Istio
 URL: "/2018/05/23/istio-auto-injection-with-webhook/"
-categories: [ Tech ]
+categories: [ 学习 ]
 ---
 
 ## 前言

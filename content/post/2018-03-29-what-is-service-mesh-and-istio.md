@@ -12,7 +12,7 @@ tags:
     - Service Mesh
     - Istio
 URL: "/2018/03/29/what-is-service-mesh-and-istio/"
-categories: [ Tech ]    
+categories: [ 学习 ]    
 ---
 
 ## 微服务架构的演进

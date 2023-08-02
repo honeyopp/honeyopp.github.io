@@ -10,7 +10,7 @@ published: true
 tags:
     - Istio
 URL: "/2017/11/08/istio-canary-release/"
-categories: [ "Tech" ]
+categories: [ "学习" ]
 ---
 
 ## 灰度发布（又名金丝雀发布）介绍

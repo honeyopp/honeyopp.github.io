@@ -10,7 +10,7 @@ published: true
 tags:
     - ubuntu 
 URL: "/2018/05/24/set_up_my_ubuntu_desktop/"
-categories: [ "Tips" ]    
+categories: [ "便签" ]    
 ---
 
 ## Generate SSH Key Pair

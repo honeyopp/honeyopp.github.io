@@ -10,7 +10,7 @@ image: "/img/istio-install_and_example/post-bg.jpg"
 tags:
     - Istio
 URL: "/2017/11/04/istio-install_and_example/"
-categories: [ Tech ]
+categories: [ 学习 ]
 ---
 
 ## 服务网格简介

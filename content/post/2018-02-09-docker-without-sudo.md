@@ -13,7 +13,7 @@ tags:
     - Tips
     - Docker
 URL: "/2018/02/09/docker-without-sudo/"
-categories: [ Tips ]
+categories: [ 便签 ]
 ---
 
 ### Add the docker group if it doesn't already exist:

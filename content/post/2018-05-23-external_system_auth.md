@@ -12,7 +12,7 @@ tags:
     - Microservice
     - Security
 URL: "/2018/05/23/external_system_auth/"
-categories: [ "Tech" ]    
+categories: [ "学习" ]    
 ---
 
 ## 外部系统访问控制
