@@ -1,11 +1,11 @@
 ---
 layout:     post 
-title:      "Welcome to Zhaohuabing Blog"
+title:      "Welcome to daixianhua Blog"
 subtitle:   "Hello World, Hello Blog"
 date:       2017-11-04
-author:     "赵化冰"
+author:     "代先华"
 URL: "/2017/11/03/hello-world/"
-image:      "https://img.zhaohuabing.com/post-bg-2015.jpg"
+image:      ""
 ---
 
 > “Yeah It's on. ”

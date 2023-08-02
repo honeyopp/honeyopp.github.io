@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <meta property="og:site_name" content="Huabing Blog">
+    <meta property="og:site_name" content="冷轩 Blog">
     <meta property="og:type" content="article">
 
     
@@ -31,41 +31,41 @@
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="keyword"  content="冷轩, lengxuan, lengxuan, , 冷轩的网络日志, 冷轩的博客, 冷轩 Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <link rel="shortcut icon" href="/honeyopp.github.io/img/favicon.ico">
 
-    <title>微服务安全沉思录之三 | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>微服务安全沉思录之三 | 冷轩的博客 | 冷轩 Blog</title>
 
-    <link rel="canonical" href="/2018/05/23/external_system_auth/">
-
-    
-    
-    
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    
-    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
-
-    
-    <link rel="stylesheet" href="/css/zanshang.css">
-
-    
-    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+    <link rel="canonical" href="honeyopp.github.io/2018/05/23/external_system_auth/">
 
     
     
+    
+    <link rel="stylesheet" href="/honeyopp.github.io/css/bootstrap.min.css">
 
     
-    <script src="/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/honeyopp.github.io/css/hugo-theme-cleanwhite.min.css">
 
     
-    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/honeyopp.github.io/css/zanshang.css">
 
     
-    <script src="/js/hux-blog.min.js"></script>
+    <link rel="stylesheet" href="/honeyopp.github.io/css/font-awesome.all.min.css">
 
     
-    <script src="/js/lazysizes.min.js"></script>
+    
+
+    
+    <script src="/honeyopp.github.io/js/jquery.min.js"></script>
+
+    
+    <script src="/honeyopp.github.io/js/bootstrap.min.js"></script>
+
+    
+    <script src="/honeyopp.github.io/js/hux-blog.min.js"></script>
+
+    
+    <script src="/honeyopp.github.io/js/lazysizes.min.js"></script>
 
     
     
@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Huabing Blog</a>
+            <a class="navbar-brand" href="/">冷轩 Blog</a>
         </div>
 
         
@@ -102,28 +102,28 @@
                     
                         
                         <li>
-                            <a href="/categories/life/">life</a>
+                            <a href="/honeyopp.github.io/categories/life/">life</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/tech/">tech</a>
+                            <a href="/honeyopp.github.io/categories/tech/">tech</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/tips/">tips</a>
+                            <a href="/honeyopp.github.io/categories/tips/">tips</a>
                         </li>
                         
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
+                        <li><a href="/archive//">归档</a></li>
                     
-                        <li><a href="/notes//">NOTES</a></li>
+                        <li><a href="/notes//">笔记</a></li>
                     
-                        <li><a href="/about//">ABOUT</a></li>
+                        <li><a href="/about//">关于我</a></li>
                     
 		            <li>
-                        <a href="/search"><i class="fa fa-search"></i></a>
+                        <a href="/honeyopp.github.io/search"><i class="fa fa-search"></i></a>
 		           </li>
                 </ul>
             </div>
@@ -193,7 +193,7 @@
                         
                             Posted by 
                             
-                                    &#34;赵化冰&#34;
+                                    &#34;冷轩&#34;
                              
                             on 
                             Wednesday, May 23, 2018
@@ -231,7 +231,7 @@
 <p>是一个API Token（又称API Key）可以控制对用户敏感数据的访问。微服务应用提供一个API Token的生成界面，用户登录后可以生成自己的API Token，并在第三方应用使用该API Token访问微服务的API。在这种情况下，一般只允许第三方应用访问该Token所属用户自身的数据，而不能访问其他用户的敏感私有数据。</p>
 <p>例如Github就提供了Personal API Token功能，用户可以在<a href="https://github.com/settings/tokens">Github的开发者设置界面</a>中创建Token，然后使用该Token来访问Github的API。在创建Token时，可以设置该Token可以访问用户的哪些数据，如查看Repo信息，删除Repo，查看用户信息，更新用户信息等。</p>
 <p>使用API Token来访问Github API</p>
-<pre tabindex="0"><code>curl -u zhaohuabing:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
+<pre tabindex="0"><code>curl -u lengxuan:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
 </code></pre><blockquote>
 <p>不用试了,这不是我的真实API Token, just for demonstration :-)</p>
 </blockquote>
@@ -295,7 +295,7 @@ grant_type=authorization_code
 <div class="zs-modal-box">
 	<div class="zs-modal-head">
 		<button type="button" class="close">×</button>
-		<span class="author"><a href="http://honeyopp.github.io"><img src="/img/favicon.png" />Huabing Blog</a></span>
+		<span class="author"><a href="honeyopp.github.io"><img src="/honeyopp.github.io/img/favicon.png" />冷轩 Blog</a></span>
         
 	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
 		
@@ -313,15 +313,15 @@ grant_type=authorization_code
 		<div class="zs-modal-pay">
 			<button class="btn btn-bred" id="pay-text">2元</button>
 			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+			<img src="/honeyopp.github.io/img/reward/wechat-2.png"  id="pay-image"/>
 		</div>
 	</div>
 	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/honeyopp.github.io/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/honeyopp.github.io/img/reward/alipay-btn.png"/></span></label>
 	</div>
 </div>
-<script type="text/javascript" src="/js/reward.js"></script>
+<script type="text/javascript" src="/honeyopp.github.io/js/reward.js"></script>
 
                 
 
@@ -330,13 +330,13 @@ grant_type=authorization_code
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2018/05/23/service_2_service_auth/" data-toggle="tooltip" data-placement="top" title="微服务安全沉思录之二">&larr;
+                        <a href="honeyopp.github.io/2018/05/23/service_2_service_auth/" data-toggle="tooltip" data-placement="top" title="微服务安全沉思录之二">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2018/05/24/set_up_my_ubuntu_desktop/" data-toggle="tooltip" data-placement="top" title="Everything about Setting Up My Ubuntu Desktop">Next
+                        <a href="honeyopp.github.io/2018/05/24/set_up_my_ubuntu_desktop/" data-toggle="tooltip" data-placement="top" title="Everything about Setting Up My Ubuntu Desktop">Next
                             Post &rarr;</a>
                     </li>
                     
@@ -445,7 +445,7 @@ grant_type=authorization_code
                     <h5>FRIENDS</h5>
                     <ul class="list-inline">
                         
-                        <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
+                        <li><a target="_blank" href="https://honeyopp.github.io">冷轩 的博客</a></li>
                         
                     </ul>
                 </section>
@@ -481,7 +481,7 @@ grant_type=authorization_code
 		            
                     
                     <li>
-                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                        <a target="_blank" href="/honeyopp.github.io/your%20wechat%20qr%20code%20image">
                             <span class="fa-stack fa-lg">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
@@ -531,7 +531,7 @@ grant_type=authorization_code
             
            
                    <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="Huabing Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="冷轩 Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -541,14 +541,14 @@ grant_type=authorization_code
             
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; Huabing Blog 2023
+                    Copyright &copy; 冷轩 Blog 2023
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://honeyopp.github.io">daixianhua</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
-                    </iframe>
+
+
+
+
+
                 </p>
             </div>
         </div>
@@ -640,7 +640,7 @@ grant_type=authorization_code
     
 
 
-    loadAsync("\/js\/jquery.nav.js", function () {
+    loadAsync("\/honeyopp.github.io\/js\/jquery.nav.js", function () {
         $('.catalog-body').onePageNav({
             currentClass: "active",
             changeHash: !1,
