@@ -11,7 +11,7 @@ image: "/img/2018-06-04-introducing-the-istio-v1alpha3-routing-api/background.jp
 tags:
     - Linux
 categories: [学习]
-URL: "/2023/08/03/create-process-keep-running/"
+URL: "/2023/08/03/创建自启进程/"
 ---
 
 ## linux设置开启重启执行某个shell脚本

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 冷轩 Blog</title>
-    <link>honeyopp.github.io/tags/linux/</link>
+    <link>http://honeyopp.github.io/tags/linux/</link>
     <description>Recent content in Linux on 冷轩 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Aug 2023 14:50:20 +0800</lastBuildDate><atom:link href="honeyopp.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 14:50:20 +0800</lastBuildDate><atom:link href="http://honeyopp.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023 08 03 Create Process Keep Running</title>
-      <link>honeyopp.github.io/2023/08/03/create-process-keep-running/</link>
+      <link>http://honeyopp.github.io/2023/08/03/create-process-keep-running/</link>
       <pubDate>Thu, 03 Aug 2023 14:50:20 +0800</pubDate>
       
-      <guid>honeyopp.github.io/2023/08/03/create-process-keep-running/</guid>
+      <guid>http://honeyopp.github.io/2023/08/03/create-process-keep-running/</guid>
       <description>linux设置开启重启执行某个shell脚本 要在Linux中设置开机启动后重启时执行某个shell脚本，您可以使用/etc/rc.local</description>
     </item>
     
