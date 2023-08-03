@@ -21,59 +21,54 @@ URL: "/2023/08/03/create-process-keep-running/"
 
 ## 以下是使用Systemd服务的步骤
 
-### 创建脚本文件:
+创建脚本文件:
 1. 首先，创建您要在系统启动时运行的shell脚本文件。假设您的脚本文件名为myscript.sh，可以使用任何文本编辑器来创建它。例如，使用vi编辑器：
-```shell
-   sudo vi /path/to/myscript.sh
-```
+    ```shell
+       sudo vi /path/to/myscript.sh
+    ```
 
 2. 在编辑器中，添加您想要在启动时运行的命令和操作。保存并关闭文件 赋予脚本可执行权限：
 
-   1. 确保您的脚本文件具有可执行权限。使用以下命令赋予执行权限：
-
-
-```shell
-    sudo chmod +x /path/to/myscript.sh
-```
+   确保您的脚本文件具有可执行权限。使用以下命令赋予执行权限：
     
-3. 创建Systemd服务单元：
-  在/etc/systemd/system目录下创建一个新的Systemd服务单元文件，例如myscript.service：
-```shell
-    sudo nano /etc/systemd/system/myscript.service
-```
-
-在编辑器中，添加以下内容：
-
-
-```shell
-    [Unit]
-    Description=My Script Service
-    After=network.target
+    ```shell
+        sudo chmod +x /path/to/myscript.sh
+    ```
     
-    [Service]
-    ExecStart=/path/to/myscript.sh
+3. 创建Systemd服务单元,在`/etc/systemd/system`目录下创建一个新的Systemd服务单元文件，例如`myscript.service`：
+    ```shell
+        sudo nano /etc/systemd/system/myscript.service
+    ```
+
+4. 在编辑器中，添加以下内容：
+
+    ```shell
+        [Unit]
+        Description=My Script Service
+        After=network.target
+        
+        [Service]
+        ExecStart=/path/to/myscript.sh
+        
+        [Install]
+        WantedBy=multi-user.target
+     ```
     
-    [Install]
-    WantedBy=multi-user.target
- ```
-    
-请将/path/to/myscript.sh替换为您实际脚本的路径。
+    ps:请将/path/to/myscript.sh替换为您实际脚本的路径。
 
 
-4. 启用并启动Systemd服务,现在，启用并启动新创建的Systemd服务：
+5. 启用并启动Systemd服务,现在，启用并启动新创建的Systemd服务：
+
+    ```shell
+        sudo systemctl enable myscript.service
+        sudo systemctl start myscript.service
+    ```
 
 
-```shell
-    sudo systemctl enable myscript.service
-    sudo systemctl start myscript.service
-```
-
-验证：
-
-5. 您可以使用以下命令检查服务的状态和日志：
-```shell
-    sudo systemctl status myscript.service
-```
+6. 验证：您可以使用以下命令检查服务的状态和日志：
+    ```shell
+        sudo systemctl status myscript.service
+    ```
 
 <!--more-->
 确保服务处于"active (running)"状态，并查看相关日志以确保脚本正常运行。
