@@ -1,6 +1,6 @@
 ---
 showonlyimage: true
-title: "2023 08 03 Create Process Keep Running"
+title: "linux设置开启重启执行某个shell脚本"
 date: 2023-08-03T14:50:20+08:00
 published: true
 subtitle:   ""
@@ -11,7 +11,7 @@ image: "/img/2018-06-04-introducing-the-istio-v1alpha3-routing-api/background.jp
 tags:
     - Linux
 categories: [学习]
-URL: "/2023/08/03/创建自启进程/"
+URL: "/2023/08/03/create-process-keep-running/"
 ---
 
 ## linux设置开启重启执行某个shell脚本

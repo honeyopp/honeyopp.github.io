@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 冷轩 Blog</title>
-    <link>http://honeyopp.github.io/categories/</link>
+    <link>honeyopp.github.io/categories/</link>
     <description>Recent content in Categories on 冷轩 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Aug 2023 14:50:20 +0800</lastBuildDate><atom:link href="http://honeyopp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 14:50:20 +0800</lastBuildDate><atom:link href="honeyopp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>学习</title>
-      <link>http://honeyopp.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
+      <link>honeyopp.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Thu, 03 Aug 2023 14:50:20 +0800</pubDate>
       
-      <guid>http://honeyopp.github.io/categories/%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>honeyopp.github.io/categories/%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>便签</title>
-      <link>http://honeyopp.github.io/categories/%E4%BE%BF%E7%AD%BE/</link>
+      <link>honeyopp.github.io/categories/%E4%BE%BF%E7%AD%BE/</link>
       <pubDate>Thu, 24 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://honeyopp.github.io/categories/%E4%BE%BF%E7%AD%BE/</guid>
+      <guid>honeyopp.github.io/categories/%E4%BE%BF%E7%AD%BE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>生活</title>
-      <link>http://honeyopp.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+      <link>honeyopp.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://honeyopp.github.io/categories/%E7%94%9F%E6%B4%BB/</guid>
+      <guid>honeyopp.github.io/categories/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
