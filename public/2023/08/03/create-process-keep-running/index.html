@@ -222,7 +222,8 @@
 <p>要在Linux中设置开机启动后重启时执行某个shell脚本，您可以使用/etc/rc.local或Systemd服务来实现。在这里，我将向您展示使用Systemd服务的方法，因为/etc/rc.local已经在一些Linux发行版中被弃用</p>
 <p>以下是使用Systemd服务的步骤</p>
 <ul>
-<li>创建脚本文件:
+<li>
+<p>创建脚本文件:</p>
 <ul>
 <li>
 <p>首先，创建您要在系统启动时运行的shell脚本文件。假设您的脚本文件名为myscript.sh，可以使用任何文本编辑器来创建它。例如，使用vi编辑器：</p>
@@ -237,9 +238,9 @@
 <li>
 <p>确保您的脚本文件具有可执行权限。使用以下命令赋予执行权限：</p>
 </li>
-<li>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo chmod +x /path/to/myscript.sh
-</span></span></code></pre></div></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  sudo chmod +x /path/to/myscript.sh
+</span></span></code></pre></div><ul>
 <li>
 <p>创建Systemd服务单元：
 在/etc/systemd/system目录下创建一个新的Systemd服务单元文件，例如myscript.service：</p>
@@ -247,8 +248,6 @@
 <li>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo nano /etc/systemd/system/myscript.service
 </span></span></code></pre></div><p>在编辑器中，添加以下内容：</p>
-</li>
-<li>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#ff79c6">[</span>Unit<span style="color:#ff79c6">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">Description</span><span style="color:#ff79c6">=</span>My Script Service
 </span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">After</span><span style="color:#ff79c6">=</span>network.target
@@ -264,16 +263,12 @@
 </li>
 <li>
 <p>启用并启动Systemd服务,现在，启用并启动新创建的Systemd服务：：</p>
-</li>
-<li>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl <span style="color:#8be9fd;font-style:italic">enable</span> myscript.service
 </span></span><span style="display:flex;"><span>sudo systemctl start myscript.service
 </span></span></code></pre></div><p>验证：</p>
 </li>
 <li>
 <p>您可以使用以下命令检查服务的状态和日志：</p>
-</li>
-<li>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl status myscript.service
 </span></span></code></pre></div></li>
 </ul>

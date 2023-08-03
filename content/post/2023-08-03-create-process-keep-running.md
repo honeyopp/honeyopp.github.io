@@ -16,6 +16,7 @@ URL: "/2023/08/03/create-process-keep-running/"
 
 ## linux设置开启重启执行某个shell脚本
 
+
 要在Linux中设置开机启动后重启时执行某个shell脚本，您可以使用/etc/rc.local或Systemd服务来实现。在这里，我将向您展示使用Systemd服务的方法，因为/etc/rc.local已经在一些Linux发行版中被弃用
 
 以下是使用Systemd服务的步骤
@@ -29,7 +30,8 @@ URL: "/2023/08/03/create-process-keep-running/"
 
   - 赋予脚本可执行权限：
   - 确保您的脚本文件具有可执行权限。使用以下命令赋予执行权限：
-  - ```shell
+
+  ```shell
     sudo chmod +x /path/to/myscript.sh
     ```
     
@@ -39,7 +41,7 @@ URL: "/2023/08/03/create-process-keep-running/"
     sudo nano /etc/systemd/system/myscript.service
     ```
     在编辑器中，添加以下内容：
-  - ```shell
+    ```shell
     [Unit]
     Description=My Script Service
     After=network.target
@@ -50,15 +52,17 @@ URL: "/2023/08/03/create-process-keep-running/"
     [Install]
     WantedBy=multi-user.target
     ```
+    
     - 请将/path/to/myscript.sh替换为您实际脚本的路径。
+
   - 启用并启动Systemd服务,现在，启用并启动新创建的Systemd服务：：
-  - ```shell
+    ```shell
     sudo systemctl enable myscript.service
     sudo systemctl start myscript.service
     ```
     验证：
   - 您可以使用以下命令检查服务的状态和日志：
-  - ```shell
+    ```shell
     sudo systemctl status myscript.service
     ```
     
